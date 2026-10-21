@@ -1,290 +1,326 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terra di Calabria — Eccellenze Calabresi | Retail & B2B</title>
-<meta name="description" content="E-commerce di prodotti tipici calabresi: 'nduja, cipolla di Tropea, bergamotto, olio EVO. Spedizioni internazionali, area B2B ingrosso.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A' Putiga — Eccellenze Calabresi | Retail & B2B</title>
+  <meta name="description"
+    content="E-commerce di prodotti tipici calabresi: 'nduja, cipolla di Tropea, bergamotto, olio EVO. Spedizioni internazionali, area B2B ingrosso.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <span data-i18n="topbar">Spedizione internazionale gratuita sopra €89 • Area B2B attiva</span>
-  <div class="topbar-right">
-    <select id="langSelect" aria-label="Lingua">
-      <option value="it">🇮🇹 IT</option>
-      <option value="en">🇬🇧 EN</option>
-    </select>
-    <select id="currencySelect" aria-label="Valuta">
-      <option value="EUR">€ EUR</option>
-      <option value="USD">$ USD</option>
-      <option value="GBP">£ GBP</option>
-    </select>
-  </div>
-</div>
-
-<!-- HEADER -->
-<header class="header" id="header">
-  <div class="container header-inner">
-    <a href="#" class="logo"><span class="logo-mark">TC</span> Terra di Calabria</a>
-    <nav class="nav" id="mainNav">
-      <a href="#catalogo" data-i18n="nav_shop">Catalogo</a>
-      <a href="#b2b" data-i18n="nav_b2b">B2B / Ingrosso</a>
-      <a href="#produttori" data-i18n="nav_prod">Produttori</a>
-      <a href="#recensioni" data-i18n="nav_rev">Recensioni</a>
-      <a href="#spedizioni" data-i18n="nav_ship">Spedizioni</a>
-    </nav>
-    <div class="header-actions">
-      <button class="btn btn-ghost" id="b2bBtn">B2B Login</button>
-      <button class="cart-btn" id="cartOpen" aria-label="Carrello">🛒 <span class="cart-count" id="cartCount">0</span></button>
-      <button class="burger" id="burger" aria-label="Menu">☰</button>
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span data-i18n="topbar">Spedizione internazionale gratuita sopra €89 • Area B2B attiva</span>
+    <div class="topbar-right">
+      <select id="langSelect" aria-label="Lingua">
+        <option value="it">🇮🇹 IT</option>
+        <option value="en">🇬🇧 EN</option>
+      </select>
+      <select id="currencySelect" aria-label="Valuta">
+        <option value="EUR">€ EUR</option>
+        <option value="USD">$ USD</option>
+        <option value="GBP">£ GBP</option>
+      </select>
     </div>
   </div>
-</header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="pill" data-i18n="hero_pill">Retail • Gourmet • B2B Ingrosso</span>
-      <h1 data-i18n="hero_title">La Calabria autentica, dal produttore a casa tua.</h1>
-      <p data-i18n="hero_sub">'Nduja di Spilinga, Cipolla di Tropea, Bergamotto di Reggio, Olio EVO. Selezionati da 24 piccoli produttori, spediti in 40+ paesi in 48h.</p>
-      <div class="hero-cta">
-        <a href="#catalogo" class="btn btn-primary" data-i18n="hero_cta1">Esplora il catalogo</a>
-        <a href="#b2b" class="btn btn-outline" data-i18n="hero_cta2">Accedi al listino B2B</a>
-      </div>
-      <div class="hero-stats">
-        <div><strong>24</strong><span data-i18n="stat1">produttori</span></div>
-        <div><strong>4.9★</strong><span>2.400+ recensioni</span></div>
-        <div><strong>40+</strong><span data-i18n="stat3">paesi serviti</span></div>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo"><span class="logo-mark">TC</span> Terra di Calabria</a>
+      <nav class="nav" id="mainNav">
+        <a href="#catalogo" data-i18n="nav_shop">Catalogo</a>
+        <a href="#b2b" data-i18n="nav_b2b">B2B / Ingrosso</a>
+        <a href="#produttori" data-i18n="nav_prod">Produttori</a>
+        <a href="#recensioni" data-i18n="nav_rev">Recensioni</a>
+        <a href="#spedizioni" data-i18n="nav_ship">Spedizioni</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="b2bBtn">B2B Login</button>
+        <button class="cart-btn" id="cartOpen" aria-label="Carrello">🛒 <span class="cart-count"
+            id="cartCount">0</span></button>
+        <button class="burger" id="burger" aria-label="Menu">☰</button>
       </div>
     </div>
-    <div class="hero-media">
-      <div class="hero-card hero-card-main">🌶️<small>'Nduja di Spilinga DOP</small></div>
-      <div class="hero-card">🧅<small>Tropea IGP</small></div>
-      <div class="hero-card">🍋<small>Bergamotto</small></div>
-      <div class="hero-card">🫒<small>Olio EVO</small></div>
-      <div class="hero-badge">✓ DOP • IGP • BIO</div>
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- TRUST -->
-<div class="container trust">
-  <div>🚚 <span data-i18n="t1">Spedizione internazionale tracciata</span></div>
-  <div>🔒 <span data-i18n="t2">Checkout rapido e sicuro</span></div>
-  <div>🏛️ <span data-i18n="t3">Listini B2B dedicati -20%</span></div>
-  <div>🌿 <span data-i18n="t4">Filiera corta certificata</span></div>
-</div>
-
-<!-- CATALOGO -->
-<section id="catalogo" class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">Catalogo</span>
-        <h2 data-i18n="cat_title">Prodotti tipici, filtrabili per gusto.</h2>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="pill" data-i18n="hero_pill">Retail • Gourmet • B2B Ingrosso</span>
+        <h1 data-i18n="hero_title">La Calabria autentica, dal produttore a casa tua.</h1>
+        <p data-i18n="hero_sub">'Nduja di Spilinga, Cipolla di Tropea, Bergamotto di Reggio, Olio EVO. Selezionati da 24
+          piccoli produttori, spediti in 40+ paesi in 48h.</p>
+        <div class="hero-cta">
+          <a href="#catalogo" class="btn btn-primary" data-i18n="hero_cta1">Esplora il catalogo</a>
+          <a href="#b2b" class="btn btn-outline" data-i18n="hero_cta2">Accedi al listino B2B</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>24</strong><span data-i18n="stat1">produttori</span></div>
+          <div><strong>4.9★</strong><span>2.400+ recensioni</span></div>
+          <div><strong>40+</strong><span data-i18n="stat3">paesi serviti</span></div>
+        </div>
       </div>
-      <div class="filters-row">
-        <input type="search" id="searchInput" placeholder="Cerca: nduja, bergamotto…">
-        <select id="catFilter">
-          <option value="all">Tutte le categorie</option>
-          <option value="salumi">Salumi & Conserve</option>
-          <option value="olio">Olio & Condimenti</option>
-          <option value="dolci">Dolci & Agrumi</option>
-          <option value="vino">Vini & Bevande</option>
-          <option value="formaggi">Formaggi</option>
-        </select>
-        <select id="sortFilter">
-          <option value="pop">Più amati</option>
-          <option value="asc">Prezzo ↑</option>
-          <option value="desc">Prezzo ↓</option>
-        </select>
+      <div class="hero-media">
+        <div class="hero-card hero-card-main">🌶️<small>'Nduja di Spilinga DOP</small></div>
+        <div class="hero-card">🧅<small>Tropea IGP</small></div>
+        <div class="hero-card">🍋<small>Bergamotto</small></div>
+        <div class="hero-card">🫒<small>Olio EVO</small></div>
+        <div class="hero-badge">✓ DOP • IGP • BIO</div>
       </div>
     </div>
-    <div id="b2bBanner" class="b2b-banner hidden">✅ <span data-i18n="b2b_active">Modalità B2B attiva: vedi prezzi ingrosso scontati del 20%</span></div>
-    <div class="grid-products" id="productGrid"></div>
-  </div>
-</section>
+  </section>
 
-<!-- B2B -->
-<section id="b2b" class="section section-sage">
-  <div class="container b2b-grid">
-    <div>
-      <span class="eyebrow">B2B / Ingrosso</span>
-      <h2 data-i18n="b2b_title">Listini dedicati per ristoratori, distributori e boutique.</h2>
-      <ul class="b2b-list">
-        <li>✓ <span data-i18n="b1">Sconto 20% su tutto il catalogo + fasce volume fino a -35%</span></li>
-        <li>✓ <span data-i18n="b2">Ordine minimo €149, pallet e consegne programmate</span></li>
-        <li>✓ <span data-i18n="b3">Fatturazione UE con reverse charge, documenti export</span></li>
-        <li>✓ <span data-i18n="b4">Account manager dedicato e campionatura gratuita</span></li>
-      </ul>
-      <div class="b2b-cta">
-        <button class="btn btn-primary" id="b2bBtn2" data-i18n="b2b_login">Accedi all'area riservata</button>
-        <button class="btn btn-outline" id="downloadListino">⬇ Listino CSV</button>
-      </div>
-      <p class="muted small">Demo: <code>b2b@calabriafood.it</code> / <code>ingrosso2026</code></p>
-    </div>
-    <div class="card">
-      <h3 data-i18n="b2b_table">Estratto listino B2B</h3>
-      <table class="table" id="b2bTable">
-        <thead><tr><th>Prodotto</th><th>Retail</th><th>B2B</th><th>MOQ</th></tr></thead>
-        <tbody></tbody>
-      </table>
-      <p class="muted small" id="b2bLockMsg">🔒 Accedi per sbloccare prezzi e ordini ingrosso.</p>
-    </div>
+  <!-- TRUST -->
+  <div class="container trust">
+    <div>🚚 <span data-i18n="t1">Spedizione internazionale tracciata</span></div>
+    <div>🔒 <span data-i18n="t2">Checkout rapido e sicuro</span></div>
+    <div>🏛️ <span data-i18n="t3">Listini B2B dedicati -20%</span></div>
+    <div>🌿 <span data-i18n="t4">Filiera corta certificata</span></div>
   </div>
-</section>
 
-<!-- PRODUTTORI -->
-<section id="produttori" class="section">
-  <div class="container">
-    <span class="eyebrow">Filiera</span>
-    <h2 data-i18n="prod_title">Le storie dei produttori locali.</h2>
-    <div class="grid-3" id="producerGrid">
-      <article class="card producer">
-        <div class="avatar">👨‍🌾</div>
-        <h3>Azienda La Spilingese — Vibo Valentia</h3>
-        <p>Tre generazioni nella 'Nduja DOP. Maiale nero allevato allo stato brado, peperoncino essiccato al sole dell'altopiano.</p>
-        <span class="tag">Salumi • dal 1968</span>
-      </article>
-      <article class="card producer">
-        <div class="avatar">👩‍🌾</div>
-        <h3>Coop. Bergamotto di Reggio</h3>
-        <p>120 famiglie custodiscono l'unico bergamotto al mondo che cresce sulla costa jonica. Oli essenziali e marmellate premiate.</p>
-        <span class="tag">Agrumi • BIO</span>
-      </article>
-      <article class="card producer">
-        <div class="avatar">🧑‍🌾</div>
-        <h3>Frantoio Piano di Sila</h3>
-        <p>Olio EVO monocultivar Carolea spremuto a freddo entro 4 ore. Acidità &lt; 0,2°, vincitore Ercole Olivario 2025.</p>
-        <span class="tag">Olio • DOP</span>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- RECENSIONI -->
-<section id="recensioni" class="section section-olive">
-  <div class="container">
-    <span class="eyebrow light">Dicono di noi</span>
-    <h2 class="light" data-i18n="rev_title">2.400+ recensioni verificate.</h2>
-    <div class="grid-3" id="reviewsGrid"></div>
-  </div>
-</section>
-
-<!-- SPEDIZIONI -->
-<section id="spedizioni" class="section">
-  <div class="container ship-grid">
-    <div>
-      <span class="eyebrow">Logistica</span>
-      <h2 data-i18n="ship_title">Spedizioni internazionali integrate.</h2>
-      <p class="muted" data-i18n="ship_sub">Calcola in tempo reale costo e tempi per la tua zona. Imballo termico gratuito per freschi e formaggi.</p>
-      <div class="card calc">
-        <label>Destinazione
-          <select id="shipZone">
-            <option value="8.9">🇮🇹 Italia — 24/48h</option>
-            <option value="14.9">🇪🇺 Europa UE — 2/4 gg</option>
-            <option value="24.9">🇺🇸🇬🇧 USA / UK — 3/6 gg</option>
-            <option value="34.9">🌍 Resto del mondo — 5/9 gg</option>
+  <!-- CATALOGO -->
+  <section id="catalogo" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Catalogo</span>
+          <h2 data-i18n="cat_title">Prodotti tipici, filtrabili per gusto.</h2>
+        </div>
+        <div class="filters-row">
+          <input type="search" id="searchInput" placeholder="Cerca: nduja, bergamotto…">
+          <select id="catFilter">
+            <option value="all">Tutte le categorie</option>
+            <option value="salumi">Salumi & Conserve</option>
+            <option value="olio">Olio & Condimenti</option>
+            <option value="dolci">Dolci & Agrumi</option>
+            <option value="vino">Vini & Bevande</option>
+            <option value="formaggi">Formaggi</option>
           </select>
-        </label>
-        <label>Peso carrello (kg) <input type="number" id="shipWeight" value="3" min="1" max="50"></label>
-        <div class="calc-result">Costo stimato: <strong id="shipResult">—</strong></div>
-        <small class="muted">Gratuita sopra €89 (IT/UE). Dazi USA inclusi fino a $800.</small>
+          <select id="sortFilter">
+            <option value="pop">Più amati</option>
+            <option value="asc">Prezzo ↑</option>
+            <option value="desc">Prezzo ↓</option>
+          </select>
+        </div>
+      </div>
+      <div id="b2bBanner" class="b2b-banner hidden">✅ <span data-i18n="b2b_active">Modalità B2B attiva: vedi prezzi
+          ingrosso scontati del 20%</span></div>
+      <div class="grid-products" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- B2B -->
+  <section id="b2b" class="section section-sage">
+    <div class="container b2b-grid">
+      <div>
+        <span class="eyebrow">B2B / Ingrosso</span>
+        <h2 data-i18n="b2b_title">Listini dedicati per ristoratori, distributori e boutique.</h2>
+        <ul class="b2b-list">
+          <li>✓ <span data-i18n="b1">Sconto 20% su tutto il catalogo + fasce volume fino a -35%</span></li>
+          <li>✓ <span data-i18n="b2">Ordine minimo €149, pallet e consegne programmate</span></li>
+          <li>✓ <span data-i18n="b3">Fatturazione UE con reverse charge, documenti export</span></li>
+          <li>✓ <span data-i18n="b4">Account manager dedicato e campionatura gratuita</span></li>
+        </ul>
+        <div class="b2b-cta">
+          <button class="btn btn-primary" id="b2bBtn2" data-i18n="b2b_login">Accedi all'area riservata</button>
+          <button class="btn btn-outline" id="downloadListino">⬇ Listino CSV</button>
+        </div>
+        <p class="muted small">Demo: <code>b2b@calabriafood.it</code> / <code>ingrosso2026</code></p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="b2b_table">Estratto listino B2B</h3>
+        <table class="table" id="b2bTable">
+          <thead>
+            <tr>
+              <th>Prodotto</th>
+              <th>Retail</th>
+              <th>B2B</th>
+              <th>MOQ</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p class="muted small" id="b2bLockMsg">🔒 Accedi per sbloccare prezzi e ordini ingrosso.</p>
       </div>
     </div>
-    <div class="card">
-      <h3 data-i18n="fast_title">Checkout rapido ⚡</h3>
-      <ol class="steps">
-        <li>Carrello con spedizione auto-calcolata</li>
-        <li>1 solo form: indirizzo + pagamento</li>
-        <li>Apple Pay / Google Pay / Klarna / Bonifico B2B</li>
-        <li>Tracking via email + SMS in 2 lingue</li>
-      </ol>
-      <button class="btn btn-primary btn-block" id="fastCheckout" data-i18n="fast_cta">Vai al checkout rapido</button>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container footer-grid">
-    <div><strong>Terra di Calabria</strong><p class="muted">Via dei Sapori 12, 88100 Catanzaro<br>P.IVA 03456780790</p></div>
-    <div><strong>Shop</strong><br><a href="#catalogo">Catalogo</a><br><a href="#b2b">B2B</a><br><a href="#spedizioni">Spedizioni</a></div>
-    <div><strong>App Mobile</strong><br>📱 iOS & Android<br><button class="btn btn-ghost small">Scarica APK / App Store</button></div>
-    <div><strong>Newsletter -10%</strong><br><div class="nl"><input id="nlInput" placeholder="email"><button class="btn btn-primary" id="nlBtn">OK</button></div></div>
-  </div>
-  <p class="copy">© 2026 Terra di Calabria — Demo HTML/CSS/JS</p>
-</footer>
-
-<!-- CART DRAWER -->
-<aside class="drawer" id="cartDrawer">
-  <div class="drawer-head"><h3>🛒 <span data-i18n="cart">Carrello</span></h3><button id="cartClose">✕</button></div>
-  <div class="drawer-body" id="cartItems"></div>
-  <div class="drawer-foot">
-    <div class="row"><span>Subtotale</span><strong id="cartTotal">€0,00</strong></div>
-    <div class="row muted small"><span>Spedizione</span><span id="cartShip">calcolata al checkout</span></div>
-    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout rapido →</button>
-  </div>
-</aside>
-
-<!-- B2B MODAL -->
-<div class="modal" id="b2bModal">
-  <div class="modal-box">
-    <button class="modal-x" data-close>✕</button>
-    <h3>🔐 Area riservata B2B</h3>
-    <p class="muted">Ristoratori, distributori, boutique gastronomiche.</p>
-    <input id="b2bEmail" type="email" placeholder="b2b@calabriafood.it" value="b2b@calabriafood.it">
-    <input id="b2bPass" type="password" placeholder="Password" value="ingrosso2026">
-    <p class="error hidden" id="b2bError">Credenziali non valide.</p>
-    <button class="btn btn-primary btn-block" id="b2bLogin">Accedi al listino</button>
-    <button class="btn btn-ghost btn-block hidden" id="b2bLogout">Esci</button>
-  </div>
-</div>
-
-<!-- CHECKOUT MODAL -->
-<div class="modal" id="checkoutModal">
-  <div class="modal-box wide">
-    <button class="modal-x" data-close>✕</button>
-    <h3>⚡ Checkout rapido</h3>
-    <div class="co-steps"><span class="active" id="st1">1 Carrello</span> → <span id="st2">2 Dati</span> → <span id="st3">3 Conferma</span></div>
-    <div id="coStep1"></div>
-    <div id="coStep2" class="hidden">
-      <div class="form-grid">
-        <input id="fName" placeholder="Nome e cognome *">
-        <input id="fEmail" type="email" placeholder="Email *">
-        <input id="fAddr" placeholder="Indirizzo, città, CAP *">
-        <select id="fShip">
-          <option value="8.9">🇮🇹 Italia €8,90</option>
-          <option value="14.9">🇪🇺 Europa €14,90</option>
-          <option value="24.9">🇺🇸🇬🇧 USA/UK €24,90</option>
-          <option value="34.9">🌍 Mondo €34,90</option>
-        </select>
-        <select id="fPay"><option>💳 Carta</option><option>🍎 Apple Pay</option><option>🏦 Bonifico B2B 30gg</option><option>💶 Contrassegno (solo IT)</option></select>
+  <!-- PRODUTTORI -->
+  <section id="produttori" class="section">
+    <div class="container">
+      <span class="eyebrow">Filiera</span>
+      <h2 data-i18n="prod_title">Le storie dei produttori locali.</h2>
+      <div class="grid-3" id="producerGrid">
+        <article class="card producer">
+          <div class="avatar">👨‍🌾</div>
+          <h3>Azienda La Spilingese — Vibo Valentia</h3>
+          <p>Tre generazioni nella 'Nduja DOP. Maiale nero allevato allo stato brado, peperoncino essiccato al sole
+            dell'altopiano.</p>
+          <span class="tag">Salumi • dal 1968</span>
+        </article>
+        <article class="card producer">
+          <div class="avatar">👩‍🌾</div>
+          <h3>Coop. Bergamotto di Reggio</h3>
+          <p>120 famiglie custodiscono l'unico bergamotto al mondo che cresce sulla costa jonica. Oli essenziali e
+            marmellate premiate.</p>
+          <span class="tag">Agrumi • BIO</span>
+        </article>
+        <article class="card producer">
+          <div class="avatar">🧑‍🌾</div>
+          <h3>Frantoio Piano di Sila</h3>
+          <p>Olio EVO monocultivar Carolea spremuto a freddo entro 4 ore. Acidità &lt; 0,2°, vincitore Ercole Olivario
+            2025.</p>
+          <span class="tag">Olio • DOP</span>
+        </article>
       </div>
-      <button class="btn btn-primary btn-block" id="toStep3">Paga ora →</button>
     </div>
-    <div id="coStep3" class="hidden center">
-      <div class="big-ok">✅</div>
-      <h4>Ordine confermato!</h4>
-      <p class="muted">N. <strong id="orderNum"></strong> • Tracking inviato via email.<br>Totale addebitato: <strong id="orderTotal"></strong></p>
-      <button class="btn btn-outline" data-close>Continua lo shopping</button>
+  </section>
+
+  <!-- RECENSIONI -->
+  <section id="recensioni" class="section section-olive">
+    <div class="container">
+      <span class="eyebrow light">Dicono di noi</span>
+      <h2 class="light" data-i18n="rev_title">2.400+ recensioni verificate.</h2>
+      <div class="grid-3" id="reviewsGrid"></div>
     </div>
-    <div class="co-foot" id="coFoot1">
-      <div class="row"><span>Totale + spedizione</span><strong id="coTotal"></strong></div>
-      <button class="btn btn-primary btn-block" id="toStep2">Continua →</button>
+  </section>
+
+  <!-- SPEDIZIONI -->
+  <section id="spedizioni" class="section">
+    <div class="container ship-grid">
+      <div>
+        <span class="eyebrow">Logistica</span>
+        <h2 data-i18n="ship_title">Spedizioni internazionali integrate.</h2>
+        <p class="muted" data-i18n="ship_sub">Calcola in tempo reale costo e tempi per la tua zona. Imballo termico
+          gratuito per freschi e formaggi.</p>
+        <div class="card calc">
+          <label>Destinazione
+            <select id="shipZone">
+              <option value="8.9">🇮🇹 Italia — 24/48h</option>
+              <option value="14.9">🇪🇺 Europa UE — 2/4 gg</option>
+              <option value="24.9">🇺🇸🇬🇧 USA / UK — 3/6 gg</option>
+              <option value="34.9">🌍 Resto del mondo — 5/9 gg</option>
+            </select>
+          </label>
+          <label>Peso carrello (kg) <input type="number" id="shipWeight" value="3" min="1" max="50"></label>
+          <div class="calc-result">Costo stimato: <strong id="shipResult">—</strong></div>
+          <small class="muted">Gratuita sopra €89 (IT/UE). Dazi USA inclusi fino a $800.</small>
+        </div>
+      </div>
+      <div class="card">
+        <h3 data-i18n="fast_title">Checkout rapido ⚡</h3>
+        <ol class="steps">
+          <li>Carrello con spedizione auto-calcolata</li>
+          <li>1 solo form: indirizzo + pagamento</li>
+          <li>Apple Pay / Google Pay / Klarna / Bonifico B2B</li>
+          <li>Tracking via email + SMS in 2 lingue</li>
+        </ol>
+        <button class="btn btn-primary btn-block" id="fastCheckout" data-i18n="fast_cta">Vai al checkout rapido</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><strong>Terra di Calabria</strong>
+        <p class="muted">Via dei Sapori 12, 88100 Catanzaro<br>P.IVA 03456780790</p>
+      </div>
+      <div><strong>Shop</strong><br><a href="#catalogo">Catalogo</a><br><a href="#b2b">B2B</a><br><a
+          href="#spedizioni">Spedizioni</a></div>
+      <div><strong>App Mobile</strong><br>📱 iOS & Android<br><button class="btn btn-ghost small">Scarica APK / App
+          Store</button></div>
+      <div><strong>Newsletter -10%</strong><br>
+        <div class="nl"><input id="nlInput" placeholder="email"><button class="btn btn-primary" id="nlBtn">OK</button>
+        </div>
+      </div>
+    </div>
+    <p class="copy">© 2026 Terra di Calabria — Demo HTML/CSS/JS</p>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <aside class="drawer" id="cartDrawer">
+    <div class="drawer-head">
+      <h3>🛒 <span data-i18n="cart">Carrello</span></h3><button id="cartClose">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="row"><span>Subtotale</span><strong id="cartTotal">€0,00</strong></div>
+      <div class="row muted small"><span>Spedizione</span><span id="cartShip">calcolata al checkout</span></div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout rapido →</button>
+    </div>
+  </aside>
+
+  <!-- B2B MODAL -->
+  <div class="modal" id="b2bModal">
+    <div class="modal-box">
+      <button class="modal-x" data-close>✕</button>
+      <h3>🔐 Area riservata B2B</h3>
+      <p class="muted">Ristoratori, distributori, boutique gastronomiche.</p>
+      <input id="b2bEmail" type="email" placeholder="b2b@calabriafood.it" value="b2b@calabriafood.it">
+      <input id="b2bPass" type="password" placeholder="Password" value="ingrosso2026">
+      <p class="error hidden" id="b2bError">Credenziali non valide.</p>
+      <button class="btn btn-primary btn-block" id="b2bLogin">Accedi al listino</button>
+      <button class="btn btn-ghost btn-block hidden" id="b2bLogout">Esci</button>
     </div>
   </div>
-</div>
 
-<div class="toast" id="toast"></div>
-<div class="overlay" id="overlay"></div>
+  <!-- CHECKOUT MODAL -->
+  <div class="modal" id="checkoutModal">
+    <div class="modal-box wide">
+      <button class="modal-x" data-close>✕</button>
+      <h3>⚡ Checkout rapido</h3>
+      <div class="co-steps"><span class="active" id="st1">1 Carrello</span> → <span id="st2">2 Dati</span> → <span
+          id="st3">3 Conferma</span></div>
+      <div id="coStep1"></div>
+      <div id="coStep2" class="hidden">
+        <div class="form-grid">
+          <input id="fName" placeholder="Nome e cognome *">
+          <input id="fEmail" type="email" placeholder="Email *">
+          <input id="fAddr" placeholder="Indirizzo, città, CAP *">
+          <select id="fShip">
+            <option value="8.9">🇮🇹 Italia €8,90</option>
+            <option value="14.9">🇪🇺 Europa €14,90</option>
+            <option value="24.9">🇺🇸🇬🇧 USA/UK €24,90</option>
+            <option value="34.9">🌍 Mondo €34,90</option>
+          </select>
+          <select id="fPay">
+            <option>💳 Carta</option>
+            <option>🍎 Apple Pay</option>
+            <option>🏦 Bonifico B2B 30gg</option>
+            <option>💶 Contrassegno (solo IT)</option>
+          </select>
+        </div>
+        <button class="btn btn-primary btn-block" id="toStep3">Paga ora →</button>
+      </div>
+      <div id="coStep3" class="hidden center">
+        <div class="big-ok">✅</div>
+        <h4>Ordine confermato!</h4>
+        <p class="muted">N. <strong id="orderNum"></strong> • Tracking inviato via email.<br>Totale addebitato: <strong
+            id="orderTotal"></strong></p>
+        <button class="btn btn-outline" data-close>Continua lo shopping</button>
+      </div>
+      <div class="co-foot" id="coFoot1">
+        <div class="row"><span>Totale + spedizione</span><strong id="coTotal"></strong></div>
+        <button class="btn btn-primary btn-block" id="toStep2">Continua →</button>
+      </div>
+    </div>
+  </div>
 
-<script src="app.js"></script>
+  <div class="toast" id="toast"></div>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
